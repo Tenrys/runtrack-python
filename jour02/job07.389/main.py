@@ -76,7 +76,7 @@ class Bibliotheque:
   def getNom(self):
     return self.__nom
   
-  def acheterLivre(self, auteur, titre, n = 1):
+  def acheterLivre(self, auteur, titre, n=1):
     for livre in auteur.getOeuvres():
       if livre.getTitre().lower().strip() == titre.lower().strip():
         self.__catalogue[livre] = n
