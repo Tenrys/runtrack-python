@@ -48,7 +48,7 @@ class Auteur(Personne):
       print(oeuvre.getTitre())
 
   def ecrireUnLivre(self, titre):
-      self.__oeuvres.append(Livre(titre, self))
+    self.__oeuvres.append(Livre(titre, self))
 
 test = Auteur("David", "Ascher")
 test.ecrireUnLivre("Learning Python")
